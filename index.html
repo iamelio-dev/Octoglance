@@ -3,24 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sprout – Join the Waitlist</title>
+  <title>Octopus Agile prices wherever you need them</title>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="./Assets/Sprout_favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Sprout_favicon.png">
+  <link rel="icon" type="image/png" href="./Assets/Octoglance_favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./Assets/Octoglance_favicon.png">
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Sprout – Join the Waitlist" />
-  <meta property="og:description" content="No accounts, no sync drama, no noise. Just you, your projects, and a clean Kanban flow." />
-  <meta property="og:image" content="https://sproutformac.com/Assets/Opengraph_image.jpg" />
-  <meta property="og:url" content="https://sproutformac.com" />
+  <meta property="og:title" content="Octopus Agile prices wherever you need them" />
+  <meta property="og:description" content="On your lockscreen, homescreen, watchface or notification. Never miss a price spike or plunge." />
+  <meta property="og:image" content="./Assets/Opengraph_image.jpg" />
+  <meta property="og:url" content="https://Octoglanceformac.com" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter / LinkedIn -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Sprout – Join the Waitlist" />
-  <meta name="twitter:description" content="No accounts, no sync drama, no noise. Just you, your projects, and a clean Kanban flow." />
-  <meta name="twitter:image" content="https://sproutformac.com/Assets/Opengraph_image.jpg" />
+  <meta name="twitter:title" content="Octopus Agile prices wherever you need them" />
+  <meta name="twitter:description" content="On your lockscreen, homescreen, watchface or notification. Never miss a price spike or plunge." />
+  <meta name="twitter:image" content="./Assets/Opengraph_image.jpg" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
@@ -123,57 +123,14 @@
       margin-bottom: 40px;
     }
 
-    form {
+    .app-store-container {
       display: flex;
-      max-width: 400px;
-      width: 100%;
-      margin: 0 auto 0 0;
+      align-items: center;
     }
 
-    .newsletter-form-container {
-    height: 60px;
-    justify-content: center;
-    }
-
-    input[type="email"] {
-      flex: 1;
-      padding: 14px 16px;
-      border: 1px solid var(--input-border);
-      border-right: none;
-      border-radius: 12px 0 0 12px;
-      font-size: 15px;
-      background: var(--bg);
-      color: var(--text);
-      transition: background 0.2s ease;
-    }
-
-    input[type="email"]:hover,
-    input[type="email"]:focus {
-      background: var(--input-hover);
-      outline: none;
-    }
-
-    button {
-      background: var(--button-bg);
-      color: var(--button-text);
-      font-weight: 500;
-      border: none;
-      border-radius: 0 12px 12px 0;
-      padding: 14px 20px;
-      font-size: 15px;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: background 0.2s ease;
-
-      /* FIX: prevent width jump between labels */
-      min-width: 80px; /* enough for "Please wait..." */
-      text-align: center;
-    }
-
-    button:hover,
-    button:focus {
-      background: var(--button-bg-hover);
-      outline: none;
+    .app-store-container a img {
+      width: 180px;
+      height: auto;
     }
 
     .hero {
@@ -190,61 +147,25 @@
       border-radius: 24px;
     }
 
-    .newsletter-success,
-    .newsletter-error {
-      display: none;
-    }
-
-    .newsletter-success-message {
-      color: var(--button-bg);
-      font-size: 15px;
-      margin: 0 auto 0 0;
-      /* padding: 14px 16px; */
-      text-align: left;
-      height: 20px; /* Match form input inner height */
-      display: flex;
-      align-items: center;
-      max-width: 400px;
-      width: 100%;
-      box-sizing: border-box;
-      border: 1px solid transparent; /* Match form border to maintain exact same dimensions */
-      border-radius: 12px; /* Match form border radius */
-    }
-
-    .newsletter-error-message {
-      color: #e30000;
-    }
-
-    .newsletter-back-button {
-      margin-top: 1em;
-      background: var(--muted);
-      color: var(--bg);
-      border-radius: 8px;
-      padding: 8px 16px;
-    }
 
     /* Responsive adjustments */
     @media (max-width: 1000px) {
       .container {
         flex-direction: column;
         text-align: center;
-        padding: 0; 
+        padding: 0;
         max-width: 600px;
       }
       .description {
         align-items: center;
-        text-align: center; 
-        max-width: 90%; 
+        text-align: center;
+        max-width: 90%;
       }
       .subtext {
         max-width: 400px;
       }
-      form {
-        margin: 0 auto;
-      }
-      .newsletter-success-message {
-        text-align: center;
-        margin: 0 auto;
+      .app-store-container {
+        justify-content: center;
       }
     }
 
@@ -256,23 +177,15 @@
         font-size: 24px;
       }
       .description {
-        max-width: 100%; 
+        max-width: 100%;
       }
       .hero img {
         max-width: 100%;
       }
-      form {
-        flex-direction: column;
+      .app-store-container a img {
+        width: 160px;
+        height: auto;
       }
-      input[type="email"], button {
-        border-radius: 100px;
-        border-right: 1px solid var(--input-border);
-        margin: 5px 0;
-        min-width: auto;
-      }
-      .newsletter-form-container {
-    height: 120px;
-    }
     }
 
     @media (min-width: 1000px) {
@@ -289,141 +202,32 @@
         <picture>
           <source srcset="./Assets/Icon_Dark.png" media="(prefers-color-scheme: dark)">
           <source srcset="./Assets/Icon_Light.png" media="(prefers-color-scheme: light)">
-          <img src="./Assets/Icon_Light.png" alt="Sprout logo">
+          <img src="./Assets/Icon_Light.png" alt="Octoglance logo">
         </picture>
-        <span class="logo-text">Sprout</span>
+        <span class="logo-text">Octoglance</span>
       </div>
 
-      <h1>A Kanban board that feels at home on your Mac</h1>
-      <p class="subtext">No accounts, no sync drama, no noise. Just you, your projects, and a clean Kanban flow.</p>
+      <h1>Octopus Agile prices wherever you need them</h1>
+      <p class="subtext">On your lockscreen, homescreen, watchface or notification. Never miss a price spike or plunge.</p>
 
-      <!-- Loops Form -->
-      <div class="newsletter-form-container">
-        <form 
-          class="newsletter-form" 
-          action="https://app.loops.so/api/newsletter-form/cmfwoev700quwzi0iq8r6j903" 
-          method="POST">
-          <input type="email" name="email" class="newsletter-form-input" placeholder="Enter your email" required>
-          <button type="submit" class="newsletter-form-button">Join waitlist</button>
-          <button type="button" class="newsletter-loading-button" style="display:none;">Please wait...</button>
-        </form>
-
-        <div class="newsletter-success" style="padding-top: 8px;">
-          <p class="newsletter-success-message">Thanks! We'll be in touch!</p>
-        </div>
-
-        <div class="newsletter-error">
-          <p class="newsletter-error-message">Oops! Something went wrong, please try again</p>
-        </div>
-
-        <button class="newsletter-back-button" type="button" style="display:none;">&larr; Back</button>
+      <!-- App Store Button -->
+      <div class="app-store-container">
+        <a href="https://apps.apple.com/us/app/octoglance/id6753656037?itscg=30200&itsct=apps_box_badge&mttnsubad=6753656037" style="display: inline-block;">
+          <picture>
+            <source srcset="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/white/en-us?releaseDate=1759795200" media="(prefers-color-scheme: dark)">
+            <source srcset="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1759795200" media="(prefers-color-scheme: light)">
+            <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1759795200" alt="Download on the App Store" style="width: 150px; height: 82px; vertical-align: middle; object-fit: contain;" />
+          </picture>
+        </a>
       </div>
     </div>
 
     <div class="hero">
       <picture>
-        <source srcset="./Assets/Hero_Dark.png" media="(prefers-color-scheme: dark)">
-        <source srcset="./Assets/Hero_Light.png" media="(prefers-color-scheme: light)">
-        <img src="./Assets/Hero_Light.png" alt="App screenshot">
+        <img src="./Assets/Hero.png" alt="App screenshot">
       </picture>
     </div>
   </div>
 
-  <script>
-    function submitHandler(event) {
-      event.preventDefault();
-      var container = event.target.parentNode;
-      var form = container.querySelector(".newsletter-form");
-      var formInput = container.querySelector(".newsletter-form-input");
-      var success = container.querySelector(".newsletter-success");
-      var errorContainer = container.querySelector(".newsletter-error");
-      var errorMessage = container.querySelector(".newsletter-error-message");
-      var backButton = container.querySelector(".newsletter-back-button");
-      var submitButton = container.querySelector(".newsletter-form-button");
-      var loadingButton = container.querySelector(".newsletter-loading-button");
-
-      const rateLimit = () => {
-        errorContainer.style.display = "block";
-        errorMessage.innerText = "Too many signups, please try again in a little while";
-        form.style.display = "none";
-        backButton.style.display = "block";
-      }
-
-      var time = new Date();
-      var timestamp = time.valueOf();
-      var previousTimestamp = localStorage.getItem("loops-form-timestamp");
-
-      if (previousTimestamp && Number(previousTimestamp) + 60000 > timestamp) {
-        rateLimit();
-        return;
-      }
-      localStorage.setItem("loops-form-timestamp", timestamp);
-
-      submitButton.style.display = "none";
-      loadingButton.style.display = "inline-block";
-
-      var formBody = "userGroup=Waitlist - Final&mailingLists=&email=" + encodeURIComponent(formInput.value);
-
-      fetch(event.target.action, {
-        method: "POST",
-        body: formBody,
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      })
-        .then((res) => [res.ok, res.json(), res])
-        .then(([ok, dataPromise, res]) => {
-          if (ok) {
-            // Success: hide form and show success message without back button
-            form.style.display = "none";
-            success.style.display = "block";
-            form.reset();
-          } else {
-            dataPromise.then(data => {
-              errorContainer.style.display = "block";
-              errorMessage.innerText = data.message || res.statusText;
-              form.style.display = "none";
-              backButton.style.display = "block";
-            });
-          }
-        })
-        .catch(error => {
-          if (error.message === "Failed to fetch") {
-            rateLimit();
-            return;
-          }
-          errorContainer.style.display = "block";
-          if (error.message) errorMessage.innerText = error.message;
-          localStorage.setItem("loops-form-timestamp", '');
-          form.style.display = "none";
-          backButton.style.display = "block";
-        })
-        .finally(() => {
-          loadingButton.style.display = "none";
-        });
-    }
-
-    function resetFormHandler(event) {
-      var container = event.target.parentNode;
-      var form = container.querySelector(".newsletter-form");
-      var success = container.querySelector(".newsletter-success");
-      var errorContainer = container.querySelector(".newsletter-error");
-      var errorMessage = container.querySelector(".newsletter-error-message");
-      var backButton = container.querySelector(".newsletter-back-button");
-
-      success.style.display = "none";
-      errorContainer.style.display = "none";
-      errorMessage.innerText = "Oops! Something went wrong, please try again";
-      backButton.style.display = "none";
-      form.style.display = "flex";
-    }
-
-    var formContainers = document.getElementsByClassName("newsletter-form-container");
-    for (var i = 0; i < formContainers.length; i++) {
-      var formContainer = formContainers[i]
-      if (formContainer.classList.contains('newsletter-handlers-added')) continue;
-      formContainer.querySelector(".newsletter-form").addEventListener("submit", submitHandler);
-      formContainer.querySelector(".newsletter-back-button").addEventListener("click", resetFormHandler);
-      formContainer.classList.add("newsletter-handlers-added");
-    }
-  </script>
 </body>
 </html>
